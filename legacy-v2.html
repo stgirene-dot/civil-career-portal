@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taiwan & Singapore Civil Engineering Career Portal v2</title>
+<style>
+:root{
+  --navy:#12355b; --blue:#2563eb; --light:#f4f7fb; --text:#172033;
+  --muted:#64748b; --border:#dbe3ef; --white:#fff; --green:#15803d;
+  --amber:#b45309; --red:#b91c1c;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--light);color:var(--text)}
+header{background:linear-gradient(135deg,#12355b,#1d4f91);color:white;padding:42px 24px}
+.header-inner{max-width:1180px;margin:auto}
+h1{margin:0 0 10px;font-size:clamp(28px,4vw,44px)}
+.subtitle{margin:0;max-width:760px;line-height:1.6;color:#dce9fa}
+.updated{margin-top:16px;font-size:14px;color:#bfdbfe}
+main{max-width:1180px;margin:-22px auto 50px;padding:0 20px}
+.panel{background:white;border-radius:16px;box-shadow:0 10px 30px rgba(18,53,91,.10);padding:22px}
+.controls{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1fr;gap:12px}
+input,select{width:100%;padding:12px 13px;border:1px solid var(--border);border-radius:10px;font-size:15px;background:white}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.stat{background:#eef4ff;border-radius:12px;padding:14px 15px;font-size:14px}
+.stat strong{font-size:18px;color:var(--navy)}
+.jobs{display:grid;gap:16px}
+.card{background:white;border:1px solid var(--border);border-radius:15px;padding:20px;box-shadow:0 5px 18px rgba(15,23,42,.04)}
+.card-top{display:flex;justify-content:space-between;gap:16px}
+.university{font-size:14px;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+h2{font-size:21px;margin:6px 0 8px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.pill{padding:6px 9px;border-radius:999px;background:#f1f5f9;font-size:13px;color:#475569}
+.summary{line-height:1.58;color:#475569}
+.status{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;font-size:13px;font-weight:700;white-space:nowrap}
+.open{background:#dcfce7;color:var(--green)}
+.soon{background:#fef3c7;color:var(--amber)}
+.closed{background:#fee2e2;color:var(--red)}
+.monitor{background:#e0e7ff;color:#4338ca}
+.actions{display:flex;align-items:center;gap:10px;margin-top:16px}
+.apply{display:inline-block;background:var(--blue);color:white;text-decoration:none;padding:10px 14px;border-radius:9px;font-weight:700}
+.favorite{border:1px solid var(--border);background:white;border-radius:9px;padding:9px 12px;cursor:pointer;font-size:18px}
+.favorite.active{background:#fff7ed;border-color:#fdba74}
+.scorebar{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin-top:7px}
+.scorebar span{display:block;height:100%;background:var(--blue);border-radius:999px}
+.matchbox{margin-top:14px;padding:12px 14px;background:#f8fafc;border-left:4px solid var(--blue);border-radius:8px}
+.section-title{margin:30px 0 14px;font-size:24px;color:var(--navy)}
+.lab-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.lab-card{background:white;border:1px solid var(--border);border-radius:14px;padding:18px}
+.lab-card h3{margin:4px 0 8px;font-size:18px}
+.lab-card p{color:#475569;line-height:1.55}
+.lab-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.lab-links a{font-size:14px;text-decoration:none;color:var(--blue);font-weight:700}
+.newtag{background:#dbeafe;color:#1d4ed8}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.lab-grid{grid-template-columns:1fr}}
+.empty{text-align:center;padding:44px;color:var(--muted)}
+footer{max-width:1180px;margin:0 auto;padding:0 20px 35px;color:var(--muted);font-size:13px;line-height:1.5}
+@media(max-width:950px){.controls{grid-template-columns:1fr 1fr}.card-top{flex-direction:column}}
+@media(max-width:540px){header{padding:34px 18px}.controls{grid-template-columns:1fr}.card{padding:17px}.actions{align-items:stretch}.apply{flex:1;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Taiwan & Singapore Civil Engineering Career Portal</h1>
+    <p class="subtitle">Academic and research opportunities in Taiwan and Singapore, prioritised for green cement, sustainable concrete, additive manufacturing, and smart cementitious materials.</p>
+    <div class="updated">Career Portal v2 · Profile-tailored update · July 19, 2026</div>
+  </div>
+</header>
+
+<main>
+  <section class="panel">
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search institution, green cement, 3D printing…">
+      <select id="country">
+        <option value="">Taiwan + Singapore</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Singapore">Singapore</option>
+      </select>
+      <select id="type">
+        <option value="">Academic + Research Units</option>
+        <option value="Academic Unit">Academic Unit</option>
+        <option value="Research Unit">Research Unit</option>
+      </select>
+      <select id="area">
+        <option value="">All civil engineering fields</option>
+      </select>
+      <select id="status">
+        <option value="">All statuses</option>
+        <option value="Open">Open</option>
+        <option value="Closing Soon">Closing Soon</option>
+        <option value="Career Monitor">Career Monitor</option>
+        <option value="Favorite">Favorites only</option>
+      </select>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong id="resultCount">12</strong><br>Matching opportunities</div>
+      <div class="stat"><strong id="excellentCount">0</strong><br>Excellent fit</div>
+      <div class="stat"><strong id="newCount">0</strong><br>New / priority</div>
+      <div class="stat"><strong id="favoriteCount">0</strong><br>Saved favorites</div>
+    </div>
+    <div id="jobs" class="jobs"></div>
+    <h2 class="section-title">Recommended PIs & Research Labs</h2>
+    <div id="labs" class="lab-grid"></div>
+  </section>
+</main>
+
+<footer>
+  Scope: Taiwan and Singapore only. Opportunity types are limited to Academic Units and Research Units. Profile matching prioritises civil engineering, green/low-carbon cement, sustainable concrete, additive manufacturing, self-sensing and self-healing cementitious binders, and smart infrastructure. Career Monitor entries identify relevant official recruitment channels but do not imply an active vacancy.
+</footer>
+
+<script>
+const jobs = [
+{
+ id:"ncu-2026", score:84, isNew:false, publications:["construction materials","civil engineering"], country:"Taiwan", type:"Academic Unit", institution:"National Central University", location:"Taoyuan",
+ title:"Full-time Faculty — Assistant Professor or Above", rank:"Assistant Professor or above", deadline:"2026-07-20",
+ areas:["Civil Engineering","Construction Materials","Engineering Materials"],
+ fit:"High", match:["Construction materials","Civil engineering faculty rank"],
+ summary:"A current Civil Engineering faculty opening. Materials expertise is preferred, making this relevant to sustainable cementitious materials, although the announcement is broader than green cement.",
+ url:"https://www.ncu.edu.tw/p/406-1000-1749%2Cr15.php?Lang=zh-tw"
+},
+{
+ id:"nkust-2026", score:88, isNew:false, publications:["engineering materials","concrete materials","green construction"], country:"Taiwan", type:"Academic Unit", institution:"National Kaohsiung University of Science and Technology", location:"Kaohsiung",
+ title:"Faculty Position — Engineering Materials", rank:"Assistant Professor or above", deadline:"2026-08-20",
+ areas:["Civil Engineering","Engineering Materials","Concrete Materials"],
+ fit:"High", match:["Engineering materials","Concrete-related teaching and research"],
+ summary:"One of three advertised faculty fields is engineering materials. This is among the strongest current Taiwan matches for a candidate specialising in cementitious binders and sustainable concrete.",
+ url:"https://www.ce.nkust.edu.tw/news_info.php?id=597"
+},
+{
+ id:"ntust-2026", score:96, isNew:true, publications:["green cement","self-healing cementitious binders","smart concrete","3D concrete printing"], country:"Taiwan", type:"Academic Unit", institution:"National Taiwan University of Science and Technology", location:"Taipei",
+ title:"Tenure-track Faculty — Concrete Materials", rank:"Assistant / Associate / Full Professor", deadline:"2026-08-31",
+ areas:["Civil Engineering","Concrete Materials","Green Cement","Construction Materials"],
+ fit:"Excellent", match:["Concrete materials","Independent research","Closest direct green-cement fit"],
+ summary:"A tenure-track opening specifically focused on concrete materials. This is the strongest verified Taiwan match for low-carbon cement, smart cementitious binders, self-healing materials, and concrete additive manufacturing.",
+ url:"https://www.ct.ntust.edu.tw/ct_eng/articles/view/1818?itemid=75"
+},
+{
+ id:"ncnu-2026", score:82, isNew:false, publications:["sustainable development","reinforced concrete"], country:"Taiwan", type:"Academic Unit", institution:"National Chi Nan University", location:"Nantou",
+ title:"Faculty Position — Civil Engineering and Sustainable Development", rank:"Assistant Professor or above", deadline:"2026-09-10",
+ areas:["Civil Engineering","Sustainable Infrastructure","Structural Engineering","Reinforced Concrete"],
+ fit:"High", match:["Sustainable development","Reinforced concrete","Civil engineering"],
+ summary:"A current faculty opening combining civil engineering with sustainable development. Structural expertise and reinforced-concrete teaching are preferred.",
+ url:"https://tjn.moe.edu.tw/EduJin/Opening/Detail?num=29931"
+},
+{
+ id:"ncku-2026", score:87, isNew:false, publications:["engineering materials","structural materials","smart infrastructure"], country:"Taiwan", type:"Academic Unit", institution:"National Cheng Kung University", location:"Tainan",
+ title:"Faculty Positions — Structural Engineering and Engineering Materials", rank:"Assistant Professor or above", deadline:"2026-10-08",
+ areas:["Civil Engineering","Engineering Materials","Structural Engineering","Computational Mechanics"],
+ fit:"High", match:["Engineering materials","Structural engineering","External research potential"],
+ summary:"Up to four faculty positions include engineering materials and structural engineering. Strong fit for a broader sustainable-concrete and smart-infrastructure research programme.",
+ url:"https://tjn.moe.edu.tw/EduJin/Opening/Detail?num=29232"
+},
+{
+ id:"itri", score:86, isNew:false, publications:["green materials","additive manufacturing","technology transfer"], country:"Taiwan", type:"Research Unit", institution:"Industrial Technology Research Institute (ITRI)", location:"Hsinchu",
+ title:"Research Career Monitor — Green Materials and Smart Infrastructure", rank:"Research Scientist / Principal Engineer", deadline:null,
+ areas:["Green Cement","Sustainable Materials","Smart Infrastructure","Digital Twins","Additive Manufacturing"],
+ fit:"High", match:["Industry-facing R&D","Sustainable materials","Technology transfer"],
+ summary:"A research-focused career route for sustainable construction materials, sensing, digital manufacturing, and net-zero technologies. Specific vacancies should be checked on the official career site.",
+ url:"https://www.itri.org.tw/english/Careers"
+},
+{
+ id:"ncree", score:76, isNew:false, publications:["structural health monitoring","smart infrastructure"], country:"Taiwan", type:"Research Unit", institution:"National Center for Research on Earthquake Engineering (NCREE)", location:"Taipei",
+ title:"Research Career Monitor — Smart and Resilient Infrastructure", rank:"Researcher / Associate Researcher / Senior Researcher", deadline:null,
+ areas:["Civil Engineering","Smart Infrastructure","Structural Health Monitoring","Structural Engineering"],
+ fit:"Medium", match:["Smart infrastructure","Structural monitoring","Civil engineering research"],
+ summary:"Relevant primarily to the candidate's smart-infrastructure, sensing, repair, and structural-health-monitoring experience rather than green cement itself.",
+ url:"https://www.ncree.org/"
+},
+{
+ id:"ntu-cee-sg", score:94, isNew:true, publications:["low-carbon concrete","engineered cementitious composites","3D-printable concrete","smart infrastructure"], country:"Singapore", type:"Academic Unit", institution:"Nanyang Technological University — School of Civil and Environmental Engineering", location:"Singapore",
+ title:"Faculty Career Monitor — Structural Engineering and Materials", rank:"Assistant / Associate / Full Professor", deadline:null,
+ areas:["Civil Engineering","Construction Materials","Structural Engineering","Sustainable Infrastructure","Green Cement"],
+ fit:"Excellent", match:["Structural engineering and materials","Resilient infrastructure","Sustainable construction"],
+ summary:"NTU CEE identifies structural engineering and materials within its resilient infrastructure and construction research domain. Monitor faculty recruitment for openings in sustainable construction materials and cementitious systems.",
+ url:"https://www.ntu.edu.sg/about-us/build-a-career-at-ntu"
+},
+{
+ id:"ntu-rap-sg", score:93, isNew:true, publications:["independent research","smart cement materials","additive manufacturing","sustainable infrastructure"], country:"Singapore", type:"Research Unit", institution:"Nanyang Technological University — Research Assistant Professorship Scheme", location:"Singapore",
+ title:"Research Assistant Professorship Career Route", rank:"Research Assistant Professor", deadline:null,
+ areas:["Civil Engineering","Smart Materials","Sustainable Infrastructure","Additive Manufacturing"],
+ fit:"Excellent", match:["Research-intensive appointment","Early-career independence","Minimal standard teaching"],
+ summary:"NTU's Research Assistant Professorship scheme is designed for exceptional early-career researchers in competitive research areas. It is a strong route for an independent programme in smart and sustainable cementitious materials.",
+ url:"https://www.ntu.edu.sg/research/research-careers/research-assistant-professorship-%28rap%29"
+},
+{
+ id:"nus-cee-sg", score:92, isNew:false, publications:["low-carbon materials","structural materials","sustainable infrastructure"], country:"Singapore", type:"Academic Unit", institution:"National University of Singapore — Civil and Environmental Engineering", location:"Singapore",
+ title:"Tenure-track Faculty Career Monitor — Structural and Materials Engineering", rank:"Assistant / Associate / Full Professor", deadline:null,
+ areas:["Civil Engineering","Low-carbon Materials","Concrete Materials","Structural Engineering","Sustainable Infrastructure"],
+ fit:"Excellent", match:["Low-carbon materials ecosystem","Structural and materials engineering","Faculty career route"],
+ summary:"NUS CEE has dedicated tenure-track faculty recruitment channels and a strong structural-and-materials research environment, including low-carbon materials and resilient infrastructure.",
+ url:"https://cde.nus.edu.sg/cee/about-us/people/faculty-staff/"
+},
+{
+ id:"nus-c3dpr", score:97, isNew:true, publications:["construction 3D printing","low-carbon materials","digital construction","cementitious materials"], country:"Singapore", type:"Research Unit", institution:"NUS Centre for Construction 3D Printing Research", location:"Singapore",
+ title:"Research Career Monitor — Construction 3D Printing and Low-carbon Materials", rank:"Research Fellow / Research Scientist / Research Faculty", deadline:null,
+ areas:["Additive Manufacturing","Concrete 3D Printing","Low-carbon Materials","Digital Construction","Civil Engineering"],
+ fit:"Excellent", match:["Concrete additive manufacturing","Low-carbon materials","Direct publication alignment"],
+ summary:"The closest Singapore research-unit match to the candidate's concrete additive-manufacturing background. The centre works on construction 3D printing, digital construction, and low-carbon materials.",
+ url:"https://cde.nus.edu.sg/cee/staff/du-hongjian/"
+},
+{
+ id:"astar-imre", score:80, isNew:false, publications:["smart materials","self-healing materials","materials characterisation"], country:"Singapore", type:"Research Unit", institution:"A*STAR — Institute of Materials Research and Engineering", location:"Singapore",
+ title:"Research Career Monitor — Advanced and Sustainable Materials", rank:"Research Scientist / Senior Scientist / Principal Scientist", deadline:null,
+ areas:["Sustainable Materials","Smart Materials","Materials Characterisation","Green Technology"],
+ fit:"High", match:["Advanced materials","Smart functional materials","Research-only environment"],
+ summary:"A research-intensive materials route that may fit self-sensing and self-healing binder expertise. Cement-specific vacancies are less frequent, so role-level screening is necessary.",
+ url:"https://www.a-star.edu.sg/careers"
+}
+];
+
+
+const labs = [
+{
+ country:"Singapore", institution:"NTU School of Civil and Environmental Engineering",
+ pi:"Assoc Prof Shunzhi Qian", score:98,
+ topics:["Engineered cementitious composites","3D-printable concrete","Carbon in concrete","Smart and sustainable infrastructure"],
+ rationale:"Exceptional overlap with green cement, advanced cementitious composites and concrete additive manufacturing.",
+ url:"https://www.ntu.edu.sg/erian/about-us/our-people/cluster-directors/qian-shunzhi"
+},
+{
+ country:"Singapore", institution:"NTU School of Civil and Environmental Engineering",
+ pi:"Asst Prof Zhou Wen", score:94,
+ topics:["3D-printed concrete","Interlocking concrete layers","Resilient structures","Digital fabrication"],
+ rationale:"Strong additive-manufacturing and structural-performance alignment, especially for next-generation reinforced printed concrete.",
+ url:"https://www.ntu.edu.sg/cee/news-events/news/detail/cee-research-conversations--knitting-strength-into-3d-printed-concrete"
+},
+{
+ country:"Singapore", institution:"NTU Civil & Environmental Engineering",
+ pi:"Assoc Prof En-Hua Yang", score:95,
+ topics:["Low-carbon construction materials","Fiber-reinforced cementitious composites","Intelligent cement materials","Waste-to-resource"],
+ rationale:"Direct thematic fit to sustainable, intelligent and high-performance cement-based materials.",
+ url:"https://orcid.org/0000-0001-6066-8254"
+},
+{
+ country:"Singapore", institution:"NUS Centre for Construction 3D Printing Research",
+ pi:"Construction 3D Printing Research Team", score:96,
+ topics:["Concrete 3D printing","Low-carbon materials","Digital construction","Automation"],
+ rationale:"One of the strongest institution-level matches for concrete additive manufacturing and sustainable construction materials.",
+ url:"https://cde.nus.edu.sg/cee/"
+},
+{
+ country:"Taiwan", institution:"National Taiwan University of Science and Technology",
+ pi:"Concrete Materials Faculty Cluster", score:94,
+ topics:["Concrete materials","Low-carbon binders","Durability","Smart cementitious materials"],
+ rationale:"The active concrete-materials faculty recruitment makes this the strongest immediate Taiwan application target.",
+ url:"https://www.ct.ntust.edu.tw/ct_eng/articles/view/1818?itemid=75"
+},
+{
+ country:"Taiwan", institution:"Industrial Technology Research Institute",
+ pi:"Green Materials & Manufacturing Research Teams", score:85,
+ topics:["Net-zero materials","Advanced manufacturing","Technology transfer","Industrial R&D"],
+ rationale:"Best suited to an applied research career combining sustainable materials with commercialisation and industry partnerships.",
+ url:"https://www.itri.org.tw/english/Careers"
+}
+];
+
+const today = new Date("2026-07-19T00:00:00");
+const favorites = new Set(JSON.parse(localStorage.getItem("civilJobFavorites") || "[]"));
+
+function daysLeft(deadline){
+  if(!deadline) return null;
+  return Math.ceil((new Date(deadline+"T23:59:59")-today)/(1000*60*60*24));
+}
+function statusFor(job){
+  if(!job.deadline) return "Career Monitor";
+  const d=daysLeft(job.deadline);
+  if(d<0) return "Closed";
+  if(d<=14) return "Closing Soon";
+  return "Open";
+}
+function prettyDate(v){
+  return new Date(v+"T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+}
+function initFilters(){
+  [...new Set(jobs.flatMap(j=>j.areas))].sort().forEach(v=>{
+    area.insertAdjacentHTML("beforeend",`<option>${v}</option>`);
+  });
+}
+function render(){
+  const q=search.value.toLowerCase().trim();
+  const selectedCountry=country.value;
+  const selectedType=type.value;
+  const selectedArea=area.value;
+  const selectedStatus=status.value;
+
+  const fitOrder={Excellent:0,High:1,Medium:2};
+  const filtered=jobs.filter(j=>{
+    const hay=[j.institution,j.title,j.rank,j.location,j.summary,j.fit,...j.areas,...j.match].join(" ").toLowerCase();
+    return (!q||hay.includes(q))
+      &&(!selectedCountry||j.country===selectedCountry)
+      &&(!selectedType||j.type===selectedType)
+      &&(!selectedArea||j.areas.includes(selectedArea))
+      &&(!selectedStatus||(selectedStatus==="Favorite"?favorites.has(j.id):statusFor(j)===selectedStatus));
+  }).sort((a,b)=>{
+    const scoreDiff=(b.score||0)-(a.score||0);
+    if(scoreDiff!==0) return scoreDiff;
+    const f=fitOrder[a.fit]-fitOrder[b.fit];
+    if(f!==0) return f;
+    if(a.deadline && b.deadline) return a.deadline.localeCompare(b.deadline);
+    if(a.deadline) return -1;
+    if(b.deadline) return 1;
+    return a.institution.localeCompare(b.institution);
+  });
+
+  resultCount.textContent=filtered.length;
+  favoriteCount.textContent=favorites.size;
+  excellentCount.textContent=filtered.filter(j=>(j.score||0)>=90).length;
+  newCount.textContent=filtered.filter(j=>j.isNew).length;
+  const jobsEl=document.getElementById("jobs");
+  jobsEl.innerHTML=filtered.length ? filtered.map(j=>{
+    const s=statusFor(j), d=daysLeft(j.deadline);
+    const cls=s==="Open"?"open":s==="Closing Soon"?"soon":s==="Career Monitor"?"monitor":"closed";
+    const deadlineText=j.deadline ? (d===0?"Closes today":d===1?"1 day remaining":`${d} days remaining`) : "No fixed deadline — monitor official site";
+    return `<article class="card">
+      <div class="card-top">
+        <div>
+          <div class="university">${j.country} · ${j.institution} · ${j.location}</div>
+          <h2>${j.title}</h2>
+        </div>
+        <span class="status ${cls}">${s}</span>
+      </div>
+      <div class="meta">
+        <span class="pill">${j.type}</span>${j.isNew?`<span class="pill newtag">New / Priority</span>`:""}
+        <span class="pill">Profile fit: ${j.fit}</span>
+        <span class="pill">${j.rank}</span>
+        ${j.deadline ? `<span class="pill">Deadline: ${prettyDate(j.deadline)}</span>` : ""}
+        <span class="pill">${deadlineText}</span>
+        ${j.areas.map(a=>`<span class="pill">${a}</span>`).join("")}
+      </div>
+      <p class="summary">${j.summary}</p>
+      <div class="matchbox">
+        <strong>AI profile match: ${j.score || 0}%</strong>
+        <div class="scorebar" aria-label="Profile match score"><span style="width:${j.score || 0}%"></span></div>
+        <p class="summary"><strong>Publication match:</strong> ${(j.publications||[]).join(" · ")}</p>
+      </div>
+      <p class="summary"><strong>Why it matches:</strong> ${j.match.join(" · ")}</p>
+      <div class="actions">
+        <a class="apply" href="${j.url}" target="_blank" rel="noopener">${j.deadline?"View Official Posting":"Open Official Career Page"} ↗</a>
+        <button class="favorite ${favorites.has(j.id)?"active":""}" data-id="${j.id}" aria-label="Save favorite">${favorites.has(j.id)?"★":"☆"}</button>
+      </div>
+    </article>`;
+  }).join("") : `<div class="empty">No opportunities match the selected filters.</div>`;
+
+  document.querySelectorAll(".favorite").forEach(btn=>{
+    btn.addEventListener("click",()=>toggleFavorite(btn.dataset.id));
+  });
+}
+
+function renderLabs(){
+  const selectedCountry=country.value;
+  const q=search.value.toLowerCase().trim();
+  const filtered=labs.filter(l=>{
+    const hay=[l.country,l.institution,l.pi,l.rationale,...l.topics].join(" ").toLowerCase();
+    return (!selectedCountry||l.country===selectedCountry)&&(!q||hay.includes(q));
+  }).sort((a,b)=>b.score-a.score);
+  document.getElementById("labs").innerHTML=filtered.map(l=>`
+    <article class="lab-card">
+      <div class="university">${l.country} · ${l.institution}</div>
+      <h3>${l.pi}</h3>
+      <div class="meta">
+        <span class="pill">Profile match: ${l.score}%</span>
+        ${l.topics.map(t=>`<span class="pill">${t}</span>`).join("")}
+      </div>
+      <div class="scorebar"><span style="width:${l.score}%"></span></div>
+      <p>${l.rationale}</p>
+      <div class="lab-links"><a href="${l.url}" target="_blank" rel="noopener">View PI / Lab ↗</a></div>
+    </article>`).join("") || `<div class="empty">No PI or lab matches the selected filters.</div>`;
+}
+
+function toggleFavorite(id){
+  favorites.has(id)?favorites.delete(id):favorites.add(id);
+  localStorage.setItem("civilJobFavorites",JSON.stringify([...favorites]));
+  render();
+}
+["search","country","type","area","status"].forEach(id=>document.getElementById(id).addEventListener("input",()=>{render();renderLabs();}));
+initFilters();
+render();
+renderLabs();
+
+</script>
+</body>
+</html>
