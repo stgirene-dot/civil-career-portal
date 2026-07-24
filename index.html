@@ -1,6 +1,72 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Taiwan & Singapore Civil Engineering Career Portal</title><link rel="stylesheet" href="assets/style.css"></head><body>
-<header><div class="wrap"><p class="eyebrow">PROFILE-TAILORED CAREER MONITOR</p><h1>Taiwan & Singapore Civil Engineering Career Portal</h1><p>Academic and research opportunities prioritising green cement, sustainable concrete, additive manufacturing and smart cementitious materials.</p><div id="updated" class="updated"></div></div></header>
-<main class="wrap"><section class="controls"><input id="search" placeholder="Search institution, role, research area…"><select id="country"><option value="">All countries</option><option>Taiwan</option><option>Singapore</option></select><select id="type"><option value="">All units</option><option>Academic Unit</option><option>Research Unit</option></select><select id="status"><option value="">All status</option><option>Open</option><option>Closing Soon</option><option>Career Monitor</option><option>Review Needed</option></select></section>
-<section class="stats"><div><strong id="count">0</strong><span>Matches</span></div><div><strong id="excellent">0</strong><span>Excellent fit</span></div><div><strong id="fresh">0</strong><span>New / priority</span></div><div><strong id="saved">0</strong><span>Favorites</span></div></section>
-<section><h2>Opportunities</h2><div id="jobs" class="grid"></div></section><section><h2>Recommended PIs & Labs</h2><div id="labs" class="grid"></div></section></main>
-<footer><div class="wrap">Official-source links only. Automated discovery is supplemented by “Review Needed” flags when a source cannot be verified reliably.</div></footer><script src="assets/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Taiwan-first academic, research institute, and industry jobs for civil engineering and sustainable materials.">
+  <title>Asia Civil Career Portal</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <nav aria-label="Portal">
+        <a class="brand" href="#">Civil Career <span>Portal</span></a>
+        <button id="favoritesOnly" class="saved-button" type="button" aria-pressed="false">★ Favorites <span id="saved">0</span></button>
+      </nav>
+      <div class="hero-copy">
+        <p class="eyebrow">TAIWAN-FIRST JOB MATCHING</p>
+        <h1>Find the right research or industry role, close to Taiwan.</h1>
+        <p class="lede">Focused opportunities across Taiwan, Singapore, Hong Kong, Japan, South Korea, and exceptional matches elsewhere in Asia.</p>
+        <div id="updated" class="updated" aria-live="polite">Loading latest update…</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="profile-panel" aria-labelledby="profile-heading">
+      <div>
+        <p class="section-kicker">MATCH PROFILE</p>
+        <h2 id="profile-heading">What kind of role are you looking for?</h2>
+      </div>
+      <div class="profile-switch" role="group" aria-label="Match profile">
+        <button class="profile-button active" type="button" data-profile="academic" aria-pressed="true">
+          <span>Academic profile</span>
+          <small>Faculty, postdoc & institute research</small>
+        </button>
+        <button class="profile-button" type="button" data-profile="industry" aria-pressed="false">
+          <span>Industry profile</span>
+          <small>Applied R&amp;D, engineering & materials</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Search and filters">
+      <label class="search-field">
+        <span class="sr-only">Search jobs</span>
+        <span aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Search title, skills, company, or 中文關鍵字…" autocomplete="off">
+      </label>
+      <div class="filters">
+        <label><span>Location</span><select id="location"><option value="">All priority locations</option></select></label>
+        <label><span>Category</span><select id="category"><option value="">All categories</option><option>Academic</option><option>Research Institute</option><option>Industry</option></select></label>
+        <label><span>Minimum score</span><select id="score"><option value="0">Any score</option><option value="70">70%+</option><option value="80">80%+</option><option value="90">90%+</option></select></label>
+      </div>
+    </section>
+
+    <section class="results-heading">
+      <div><p class="section-kicker">RECOMMENDED ROLES</p><h2><span id="count">0</span> matches</h2></div>
+      <p id="resultNote">Ranked for your academic profile</p>
+    </section>
+    <section id="jobs" class="job-list" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Official job links only. Titles and descriptions retain their source language; Chinese postings include a concise English aid.</p>
+      <p>No account required. Favorites stay in this browser.</p>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

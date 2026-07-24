@@ -1,8 +1,170 @@
 [
-{"id":"ntust-concrete","country":"Taiwan","institution":"National Taiwan University of Science and Technology","title":"Concrete Materials Faculty Opportunities","type":"Academic Unit","status":"Career Monitor","score":96,"isNew":true,"areas":["Green cement","Concrete materials"],"summary":"Priority Taiwan target for cementitious materials, durability and low-carbon concrete research.","match":["Green cement","Smart cementitious materials","Concrete durability"],"url":"https://www.ct.ntust.edu.tw/ct_eng/articles/view/1818?itemid=75","last_seen":"2026-07-19"},
-{"id":"ntu-cee","country":"Singapore","institution":"Nanyang Technological University","title":"Civil & Environmental Engineering Faculty Opportunities","type":"Academic Unit","status":"Career Monitor","score":94,"isNew":true,"areas":["Low-carbon concrete","Smart infrastructure"],"summary":"Strong environment for low-carbon construction materials and advanced cementitious composites.","match":["3D-printable concrete","Smart infrastructure","Sustainable binders"],"url":"https://www.ntu.edu.sg/cee/about-us/career-opportunities","last_seen":"2026-07-19"},
-{"id":"nus-c3dp","country":"Singapore","institution":"National University of Singapore","title":"Construction 3D Printing Research Opportunities","type":"Research Unit","status":"Career Monitor","score":97,"isNew":true,"areas":["Construction 3D printing","Digital construction"],"summary":"Top institution-level match for concrete additive manufacturing and sustainable construction materials.","match":["Concrete 3D printing","Low-carbon materials","Automation"],"url":"https://cde.nus.edu.sg/cee/","last_seen":"2026-07-19"},
-{"id":"itri-green","country":"Taiwan","institution":"Industrial Technology Research Institute","title":"Green Materials and Advanced Manufacturing Careers","type":"Research Unit","status":"Career Monitor","score":86,"isNew":false,"areas":["Green materials","Applied R&D"],"summary":"Applied research route combining sustainable materials, manufacturing and industry partnerships.","match":["Technology transfer","Net-zero materials","Advanced manufacturing"],"url":"https://www.itri.org.tw/english/Careers","last_seen":"2026-07-19"},
-{"id":"ncree","country":"Taiwan","institution":"National Center for Research on Earthquake Engineering","title":"Research Career Monitor","type":"Research Unit","status":"Career Monitor","score":77,"isNew":false,"areas":["Smart infrastructure","Structural monitoring"],"summary":"Relevant for structural health monitoring and resilient infrastructure.","match":["Smart infrastructure","Structural performance"],"url":"https://www.ncree.org/","last_seen":"2026-07-19"},
-{"id":"astar-imre","country":"Singapore","institution":"A*STAR Institute of Materials Research and Engineering","title":"Materials Research Scientist Opportunities","type":"Research Unit","status":"Career Monitor","score":82,"isNew":false,"areas":["Smart materials","Self-healing materials"],"summary":"Broader advanced-materials pathway with potential relevance to smart and self-healing cement systems.","match":["Smart materials","Self-healing systems","Materials characterisation"],"url":"https://www.a-star.edu.sg/imre","last_seen":"2026-07-19"}
+  {
+    "id": "ntust-concrete",
+    "country": "Taiwan",
+    "location": "Taipei, Taiwan",
+    "institution": "National Taiwan University of Science and Technology",
+    "title": "營建工程系徵聘專任教師",
+    "englishTitle": "Full-time Faculty Recruitment — Department of Civil and Construction Engineering",
+    "language": "zh-Hant",
+    "category": "Academic",
+    "description": "徵聘營建工程相關領域專任教師，申請資格與所需文件請依官方公告為準。",
+    "englishSummary": "Faculty recruitment in civil and construction engineering. See the official Chinese notice for qualifications and required documents.",
+    "skills": ["Concrete materials", "Civil engineering", "Research"],
+    "searchTerms": ["營建工程", "混凝土", "水泥", "低碳", "永續材料", "教職"],
+    "firstSeen": "2026-07-19",
+    "url": "https://www.ct.ntust.edu.tw/ct_eng/articles/view/1818?itemid=75",
+    "scores": {
+      "academic": {"location": 100, "technical": 96, "skills": 94, "level": 88, "language": 88, "company": 95},
+      "industry": {"location": 100, "technical": 72, "skills": 78, "level": 64, "language": 88, "company": 65}
+    }
+  },
+  {
+    "id": "itri-green",
+    "country": "Taiwan",
+    "location": "Hsinchu, Taiwan",
+    "institution": "Industrial Technology Research Institute (ITRI)",
+    "title": "綠色材料與先進製造研發職缺",
+    "englishTitle": "Green Materials and Advanced Manufacturing R&D Roles",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "投入綠色材料、淨零技術與先進製造之應用研發，實際職缺與條件以工研院官方招募網站為準。",
+    "englishSummary": "Applied R&D paths in green materials, net-zero technology, and advanced manufacturing at Taiwan's leading technology institute.",
+    "skills": ["Green materials", "Applied R&D", "Advanced manufacturing"],
+    "searchTerms": ["工研院", "材料研發", "淨零", "低碳", "研發工程師"],
+    "firstSeen": "2026-07-08",
+    "url": "https://www.itri.org.tw/english/Careers",
+    "scores": {
+      "academic": {"location": 100, "technical": 87, "skills": 89, "level": 84, "language": 86, "company": 90},
+      "industry": {"location": 100, "technical": 94, "skills": 92, "level": 90, "language": 86, "company": 98}
+    }
+  },
+  {
+    "id": "ncree-research",
+    "country": "Taiwan",
+    "location": "Taipei, Taiwan",
+    "institution": "National Center for Research on Earthquake Engineering",
+    "title": "研究人員與工程技術職缺",
+    "englishTitle": "Research and Engineering Positions",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "國家地震工程研究中心研究與工程技術職涯入口，涵蓋結構安全、監測與韌性基礎設施。",
+    "englishSummary": "Research and technical career route in structural safety, monitoring, and resilient infrastructure.",
+    "skills": ["Structural engineering", "Smart infrastructure", "Monitoring"],
+    "searchTerms": ["國震中心", "結構工程", "耐震", "監測", "研究人員"],
+    "firstSeen": "2026-06-20",
+    "url": "https://www.ncree.org/",
+    "scores": {
+      "academic": {"location": 100, "technical": 80, "skills": 76, "level": 82, "language": 86, "company": 82},
+      "industry": {"location": 100, "technical": 78, "skills": 75, "level": 82, "language": 86, "company": 76}
+    }
+  },
+  {
+    "id": "nus-c3dp",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "National University of Singapore",
+    "title": "Construction 3D Printing Research Opportunities",
+    "language": "en",
+    "category": "Academic",
+    "description": "Research opportunities in construction-scale additive manufacturing, digital construction, and sustainable cementitious systems.",
+    "skills": ["Concrete 3D printing", "Digital construction", "Low-carbon materials"],
+    "searchTerms": ["additive manufacturing", "cementitious materials", "postdoc", "research fellow"],
+    "firstSeen": "2026-07-19",
+    "url": "https://cde.nus.edu.sg/cee/",
+    "scores": {
+      "academic": {"location": 92, "technical": 100, "skills": 98, "level": 92, "language": 100, "company": 100},
+      "industry": {"location": 92, "technical": 91, "skills": 90, "level": 80, "language": 100, "company": 82}
+    }
+  },
+  {
+    "id": "ntu-cee",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "Nanyang Technological University",
+    "title": "Civil & Environmental Engineering Faculty Opportunities",
+    "language": "en",
+    "category": "Academic",
+    "description": "Faculty career opportunities in civil and environmental engineering, including sustainable construction materials and smart infrastructure.",
+    "skills": ["Sustainable construction", "Smart infrastructure", "Faculty"],
+    "searchTerms": ["green cement", "concrete", "assistant professor", "associate professor"],
+    "firstSeen": "2026-07-19",
+    "url": "https://www.ntu.edu.sg/cee/about-us/career-opportunities",
+    "scores": {
+      "academic": {"location": 92, "technical": 95, "skills": 92, "level": 94, "language": 100, "company": 98},
+      "industry": {"location": 92, "technical": 76, "skills": 78, "level": 68, "language": 100, "company": 76}
+    }
+  },
+  {
+    "id": "astar-imre",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "A*STAR Institute of Materials Research and Engineering",
+    "title": "Materials Research Scientist Opportunities",
+    "language": "en",
+    "category": "Research Institute",
+    "description": "Research scientist careers in advanced materials, characterization, and translation with potential relevance to smart and self-healing cement systems.",
+    "skills": ["Smart materials", "Materials characterization", "Technology translation"],
+    "searchTerms": ["self-healing", "research scientist", "materials science"],
+    "firstSeen": "2026-06-28",
+    "url": "https://www.a-star.edu.sg/imre",
+    "scores": {
+      "academic": {"location": 92, "technical": 84, "skills": 82, "level": 84, "language": 100, "company": 94},
+      "industry": {"location": 92, "technical": 88, "skills": 86, "level": 88, "language": 100, "company": 96}
+    }
+  },
+  {
+    "id": "hkust-civil",
+    "country": "Hong Kong",
+    "location": "Clear Water Bay, Hong Kong",
+    "institution": "Hong Kong University of Science and Technology",
+    "title": "Academic and Research Positions in Civil and Environmental Engineering",
+    "language": "en",
+    "category": "Academic",
+    "description": "Official department career route for civil engineering research and teaching positions in a highly connected Asian research environment.",
+    "skills": ["Civil engineering", "Research", "Sustainable infrastructure"],
+    "searchTerms": ["concrete", "construction materials", "postdoc", "faculty"],
+    "firstSeen": "2026-07-15",
+    "url": "https://ce.hkust.edu.hk/",
+    "scores": {
+      "academic": {"location": 84, "technical": 88, "skills": 86, "level": 88, "language": 100, "company": 92},
+      "industry": {"location": 84, "technical": 70, "skills": 72, "level": 66, "language": 100, "company": 72}
+    }
+  },
+  {
+    "id": "u-tokyo-civil",
+    "country": "Japan",
+    "location": "Tokyo, Japan",
+    "institution": "The University of Tokyo",
+    "title": "Civil Engineering Research Careers",
+    "language": "en",
+    "category": "Academic",
+    "description": "English-accessible starting point for research careers in civil engineering, infrastructure, and advanced construction materials.",
+    "skills": ["Civil engineering", "Infrastructure", "Construction materials"],
+    "searchTerms": ["researcher", "postdoctoral", "concrete", "sustainability"],
+    "firstSeen": "2026-07-11",
+    "url": "https://www.civil.t.u-tokyo.ac.jp/en/",
+    "scores": {
+      "academic": {"location": 76, "technical": 87, "skills": 83, "level": 82, "language": 76, "company": 94},
+      "industry": {"location": 76, "technical": 70, "skills": 72, "level": 68, "language": 76, "company": 72}
+    }
+  },
+  {
+    "id": "samsung-ct",
+    "country": "South Korea",
+    "location": "Seoul, South Korea",
+    "institution": "Samsung C&T",
+    "title": "Engineering and Construction R&D Careers",
+    "language": "en",
+    "category": "Industry",
+    "description": "Official global careers route for engineering, construction technology, and applied R&D opportunities.",
+    "skills": ["Construction technology", "Applied R&D", "Engineering"],
+    "searchTerms": ["materials", "civil engineer", "innovation", "research and development"],
+    "firstSeen": "2026-07-18",
+    "url": "https://www.samsungcnt.com/eng/careers/main.do",
+    "scores": {
+      "academic": {"location": 68, "technical": 70, "skills": 72, "level": 74, "language": 72, "company": 80},
+      "industry": {"location": 68, "technical": 85, "skills": 84, "level": 82, "language": 72, "company": 94}
+    }
+  }
 ]
