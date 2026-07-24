@@ -1,17 +1,30 @@
 # Civil Career Portal
 
-GitHub Pages career monitor for Taiwan and Singapore civil-engineering academic and research opportunities, tailored to green cement, sustainable concrete, additive manufacturing and smart cementitious materials.
+A focused, Taiwan-first static job portal for civil engineering, sustainable construction materials, and applied R&D roles across nearby Asian markets.
 
-## Publish once
-1. Create a **public** repository named `civil-career-portal` without README or starter files.
-2. Upload all files and folders from this package to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`.
-5. Open **Actions → Update career opportunities → Run workflow** once.
+## MVP scope
 
-Your site URL will be `https://YOUR-USERNAME.github.io/civil-career-portal/`.
+- Separate academic and industry match profiles
+- Taiwan search in Traditional Chinese and English; English search elsewhere
+- Academic, Research Institute, and Industry categories
+- Transparent weighted scores: location 30%, research/technical 30%, skills 20%, career level 10%, language 5%, company priority 5%
+- Location, category, and minimum-score filters
+- Original posting language and official URL, with an English aid for Chinese postings
+- New labels, last-updated metadata, and browser-local favorites
+- No account, notifications, external AI API, or broader career-intelligence features
 
-## Automatic updates
-The workflow runs daily at 08:15 Asia/Taipei. It checks the official source pages in `sources.json`, adds matching candidate links to `data/jobs.json`, and marks automatically discovered items as **Review Needed**. This is deliberate: institutional recruitment systems and page layouts change, and no generic scraper can guarantee that every candidate is a valid open vacancy.
+## Run locally
 
-To add a new official institution, edit `sources.json`. Favorites remain in each visitor's browser local storage.
+Serve the repository root (opening `index.html` directly will not load JSON):
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## Update jobs
+
+`scripts/update_jobs.py` checks the official pages in `sources.json`. Taiwan sources use Traditional Chinese and English keywords; other markets use English keywords. Automatically discovered links preserve their source title and official URL.
+
+The GitHub Actions workflow runs daily at 08:15 Asia/Taipei. Favorites remain in each visitor's browser `localStorage`.

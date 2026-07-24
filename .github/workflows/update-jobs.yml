@@ -1,0 +1,29 @@
+name: Update career opportunities
+
+on:
+  schedule:
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check official job sources
+        run: |
+          python -m pip install --disable-pip-version-check requests beautifulsoup4
+          python scripts/update_jobs.py
+      - name: Commit updated job data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json data/update-meta.json
+          git diff --cached --quiet || git commit -m "Update career opportunities"
+          git push

@@ -1,8 +1,11 @@
 [
-{"country":"Taiwan","institution":"NTUST","type":"Academic Unit","url":"https://www.ct.ntust.edu.tw/ct_eng/articles/view/1818?itemid=75"},
-{"country":"Taiwan","institution":"ITRI","type":"Research Unit","url":"https://www.itri.org.tw/english/Careers"},
-{"country":"Taiwan","institution":"NCREE","type":"Research Unit","url":"https://www.ncree.org/"},
-{"country":"Singapore","institution":"NTU CEE","type":"Academic Unit","url":"https://www.ntu.edu.sg/cee/about-us/career-opportunities"},
-{"country":"Singapore","institution":"NUS CEE","type":"Academic Unit","url":"https://cde.nus.edu.sg/cee/"},
-{"country":"Singapore","institution":"A*STAR IMRE","type":"Research Unit","url":"https://www.a-star.edu.sg/imre"}
+  {"country":"Taiwan","institution":"NTUST","category":"Academic","languages":["zh-Hant","en"],"url":"https://www.ct.ntust.edu.tw/ct_eng/articles/view/1818?itemid=75"},
+  {"country":"Taiwan","institution":"ITRI","category":"Research Institute","languages":["zh-Hant","en"],"url":"https://www.itri.org.tw/english/Careers"},
+  {"country":"Taiwan","institution":"NCREE","category":"Research Institute","languages":["zh-Hant","en"],"url":"https://www.ncree.org/"},
+  {"country":"Singapore","institution":"NTU CEE","category":"Academic","languages":["en"],"url":"https://www.ntu.edu.sg/cee/about-us/career-opportunities"},
+  {"country":"Singapore","institution":"NUS CEE","category":"Academic","languages":["en"],"url":"https://cde.nus.edu.sg/cee/"},
+  {"country":"Singapore","institution":"A*STAR IMRE","category":"Research Institute","languages":["en"],"url":"https://www.a-star.edu.sg/imre"},
+  {"country":"Hong Kong","institution":"HKUST CEE","category":"Academic","languages":["en"],"url":"https://ce.hkust.edu.hk/"},
+  {"country":"Japan","institution":"University of Tokyo Civil Engineering","category":"Academic","languages":["en"],"url":"https://www.civil.t.u-tokyo.ac.jp/en/"},
+  {"country":"South Korea","institution":"Samsung C&T","category":"Industry","languages":["en"],"url":"https://www.samsungcnt.com/eng/careers/main.do"}
 ]
