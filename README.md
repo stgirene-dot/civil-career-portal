@@ -27,4 +27,4 @@ Then open `http://localhost:8000`.
 
 `scripts/update_jobs.py` checks the official pages in `sources.json`. Taiwan sources use Traditional Chinese and English keywords; other markets use English keywords. Automatically discovered links preserve their source title and official URL.
 
-The GitHub Actions workflow runs daily at 08:15 Asia/Taipei. Favorites remain in each visitor's browser `localStorage`.
+The GitHub Actions workflow runs daily at 09:00 Asia/Dubai (Abu Dhabi time). Favorites remain in each visitor's browser `localStorage`.

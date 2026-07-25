@@ -2,7 +2,8 @@ name: Update career opportunities
 
 on:
   schedule:
-    - cron: "15 0 * * *"
+    # 09:00 Asia/Dubai (UTC+4, no daylight-saving changes)
+    - cron: "0 5 * * *"
   workflow_dispatch:
 
 permissions:
