@@ -61,6 +61,7 @@ jobs = load("data/jobs.json")
 sources = load("sources.json")
 known = {job["url"] for job in jobs}
 found = 0
+new_jobs = []
 headers = {"User-Agent": "Mozilla/5.0 CareerPortalMonitor/2.0"}
 
 for source in sources:
@@ -77,7 +78,7 @@ for source in sources:
                 continue
             language = "zh-Hant" if any("\u4e00" <= char <= "\u9fff" for char in title) else "en"
             matching_terms = [term for term in PROFILE_TERMS if term in text][:4]
-            jobs.append({
+            discovered_job = {
                 "id": hashlib.sha1(url.encode()).hexdigest()[:12],
                 "country": source["country"],
                 "location": source["country"],
@@ -92,13 +93,16 @@ for source in sources:
                 "firstSeen": datetime.now(timezone.utc).date().isoformat(),
                 "url": url,
                 "scores": dimensions(source, text)
-            })
+            }
+            jobs.append(discovered_job)
+            new_jobs.append(discovered_job)
             known.add(url)
             found += 1
     except Exception as error:
         print(f"SOURCE ERROR {source['url']}: {error}")
 
 save("data/jobs.json", jobs)
+save(".new-jobs.json", new_jobs)
 taipei_time = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M Asia/Taipei")
 save("data/update-meta.json", {
     "last_updated": taipei_time,

@@ -11,7 +11,8 @@ A focused, Taiwan-first static job portal for civil engineering, sustainable con
 - Location, category, and minimum-score filters
 - Original posting language and official URL, with an English aid for Chinese postings
 - New labels, last-updated metadata, and browser-local favorites
-- No account, notifications, external AI API, or broader career-intelligence features
+- Optional email alerts for a small, private recipient list
+- No account, external AI API, or broader career-intelligence features
 
 ## Run locally
 
@@ -28,3 +29,5 @@ Then open `http://localhost:8000`.
 `scripts/update_jobs.py` checks the official pages in `sources.json`. Taiwan sources use Traditional Chinese and English keywords; other markets use English keywords. Automatically discovered links preserve their source title and official URL.
 
 The GitHub Actions workflow checks for updates once every hour. Favorites remain in each visitor's browser `localStorage`.
+
+When new links are discovered, the workflow emails recipients configured through the `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD`, and `NOTIFICATION_RECIPIENTS` repository secrets. Manual workflow runs can enable `send_test_notification` to verify delivery without creating a fake job.
