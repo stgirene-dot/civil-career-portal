@@ -2954,5 +2954,40 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "352ea4c7c889",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "NUS CEE",
+    "title": "Woh Hup Distinguished Lecture: Engineering Fire Safety for Next-Generation Materials and Structures",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-07-31",
+    "url": "https://cde.nus.edu.sg/cee/event-detail/wohhup20260805/",
+    "scores": {
+      "academic": {
+        "location": 92,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 92,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
   }
 ]
