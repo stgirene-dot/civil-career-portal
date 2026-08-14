@@ -3024,5 +3024,40 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "12ac50419ff4",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "NUS CEE",
+    "title": "32nd KKNN Symposium in Environmental Engineering",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-08-14",
+    "url": "https://cde.nus.edu.sg/cee/news/32ndkknnsymposium/",
+    "scores": {
+      "academic": {
+        "location": 92,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 92,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
   }
 ]
