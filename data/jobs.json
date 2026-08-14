@@ -2989,5 +2989,40 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "cd7670cb840a",
+    "country": "Hong Kong",
+    "location": "Hong Kong",
+    "institution": "HKUST CEE",
+    "title": "HKUST Engineering Pioneers Novel Water Purification Technology for Selective Pollutant…",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-08-14",
+    "url": "https://ce.hkust.edu.hk/news/hkust-engineering-pioneers-novel-water-purification-technology-selective-pollutant ",
+    "scores": {
+      "academic": {
+        "location": 84,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 84,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
   }
 ]
