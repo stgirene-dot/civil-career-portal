@@ -3164,5 +3164,75 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "0ea3c234f33b",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NTUST",
+    "title": "Geotechnical Engineering",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-09-21",
+    "url": "https://www.ct.ntust.edu.tw/ct_eng/users/group/3?itemid=10&itemid=18",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 88,
+        "company": 92
+      },
+      "industry": {
+        "location": 100,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 88,
+        "company": 82
+      }
+    }
+  },
+  {
+    "id": "ae9760eb5d11",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NTUST",
+    "title": "Structural Engineering",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-09-21",
+    "url": "https://www.ct.ntust.edu.tw/ct_eng/users/group/4?itemid=10&itemid=26",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 88,
+        "company": 92
+      },
+      "industry": {
+        "location": 100,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 88,
+        "company": 82
+      }
+    }
   }
 ]
