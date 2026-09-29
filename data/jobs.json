@@ -3234,5 +3234,145 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "9a5109b8ae8c",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "NTU CEE",
+    "title": "Adjunct Faculty",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-09-29",
+    "url": "https://www.ntu.edu.sg/cee/about-us/our-people/adjunct",
+    "scores": {
+      "academic": {
+        "location": 92,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 92,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
+  },
+  {
+    "id": "186d2164d720",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "NTU CEE",
+    "title": "Central Environmental Science and Engineering Laboratory",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-09-29",
+    "url": "https://www.ntu.edu.sg/cee/about-us/laboratories/CESEL",
+    "scores": {
+      "academic": {
+        "location": 92,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 92,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
+  },
+  {
+    "id": "ab3cef2d25ba",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "NTU CEE",
+    "title": "Construction Technology and Protective Engineering Laboratory",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-09-29",
+    "url": "https://www.ntu.edu.sg/cee/about-us/laboratories/CTPE-lab",
+    "scores": {
+      "academic": {
+        "location": 92,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 92,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
+  },
+  {
+    "id": "f6ba8a579db8",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "NTU CEE",
+    "title": "Engineering Software Laboratory",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-09-29",
+    "url": "https://www.ntu.edu.sg/cee/about-us/laboratories/es-lab",
+    "scores": {
+      "academic": {
+        "location": 92,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 92,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
   }
 ]
