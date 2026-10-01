@@ -3374,5 +3374,40 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "9ffaa67c1db7",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NTUST",
+    "title": "Faculty Opening at the Department of Civil and Construction Engineering, National Taiwan University of Science and Technology(extended to 12/31)",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-10-01",
+    "url": "https://www.ct.ntust.edu.tw/ct_eng/articles/view/1821?itemid=75",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 88,
+        "company": 92
+      },
+      "industry": {
+        "location": 100,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 88,
+        "company": 82
+      }
+    }
   }
 ]
