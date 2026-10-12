@@ -3409,5 +3409,330 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "df5b78812933",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "2026-01-05 鋼筋混凝土二元系統連接梁設計與開孔牆模擬講習會 (2/6)",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "混凝土"
+    ],
+    "searchTerms": [
+      "混凝土"
+    ],
+    "firstSeen": "2026-10-12",
+    "url": "https://www.ncree.niar.org.tw/news/index/page/16488",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "df934e6bd3a7",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "2025-12-17 休士頓大學土木系 Roberto Ballarini 主任專題演講 (1/6)",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-10-12",
+    "url": "https://www.ncree.niar.org.tw/news/index/page/16487",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "e395a7ec03b1",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "結構分析模型轉換程式之泛用型架構研發－以 ETABS 轉 PISA3D 為例",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-10-12",
+    "url": "https://www.ncree.niar.org.tw/accomplishment/technicalreports/page/12238",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "a6f2fc809ffa",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "高強度鋼筋混凝土橋柱耐震行為",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "混凝土"
+    ],
+    "searchTerms": [
+      "混凝土"
+    ],
+    "firstSeen": "2026-10-12",
+    "url": "https://www.ncree.niar.org.tw/accomplishment/technicalreports/page/12236",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "3f41960d29ab",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "BATS水平力測定儀之研發與驗證",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-10-12",
+    "url": "https://www.ncree.niar.org.tw/accomplishment/technicalreports/page/12225",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "85b024b928a4",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "台灣混凝土收縮與潛變資料庫 (SCDT)",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "混凝土"
+    ],
+    "searchTerms": [
+      "混凝土"
+    ],
+    "firstSeen": "2026-10-12",
+    "url": "https://scdt.ncree.org/",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "fadcbada7a62",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "工程技術專題講座",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-10-12",
+    "url": "https://www.ncree.niar.org.tw/service/engineeringtech",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 64,
+        "skills": 62,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "06f5febac7ef",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "台灣新型高強度鋼筋混凝土 (Taiwan New RC) 專區",
+    "language": "zh-Hant",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "Official-source candidate. Review the linked posting for full requirements.",
+    "skills": [
+      "混凝土"
+    ],
+    "searchTerms": [
+      "混凝土"
+    ],
+    "firstSeen": "2026-10-12",
+    "url": "https://www.ncree.niar.org.tw/service/newrc",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
+  },
+  {
+    "id": "4f8ca64e9cbe",
+    "country": "Taiwan",
+    "location": "Taiwan",
+    "institution": "NCREE",
+    "title": "Collaborative Pseudo-dynamic Experiment of a Multiple-span Double-Skinned Concrete-Filled Tube Bridge System",
+    "language": "en",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "concrete"
+    ],
+    "searchTerms": [
+      "concrete"
+    ],
+    "firstSeen": "2026-10-12",
+    "url": "http://exp.ncree.org/dscft/",
+    "scores": {
+      "academic": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 88
+      },
+      "industry": {
+        "location": 100,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 88,
+        "company": 90
+      }
+    }
   }
 ]
