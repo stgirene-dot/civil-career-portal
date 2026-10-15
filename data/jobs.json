@@ -3734,5 +3734,40 @@
         "company": 90
       }
     }
+  },
+  {
+    "id": "45c9d6c63af8",
+    "country": "Hong Kong",
+    "location": "Hong Kong",
+    "institution": "HKUST CEE",
+    "title": "21 CIVL Faculty Recognised in the 2026 World’s Top 2% Scientists List",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-10-15",
+    "url": "https://ce.hkust.edu.hk/news/21-civl-faculty-recognised-2026-worlds-top-2-scientists-list ",
+    "scores": {
+      "academic": {
+        "location": 84,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 84,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
   }
 ]
