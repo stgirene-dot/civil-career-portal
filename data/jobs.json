@@ -3769,5 +3769,40 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "396f268ed364",
+    "country": "Hong Kong",
+    "location": "Hong Kong",
+    "institution": "HKUST CEE",
+    "title": "CIVL Faculty and Research Teams Excel at CIC AI Award 2026",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-10-27",
+    "url": "https://ce.hkust.edu.hk/news/civl-faculty-and-research-teams-excel-cic-ai-award-2026 ",
+    "scores": {
+      "academic": {
+        "location": 84,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 84,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
   }
 ]
