@@ -3804,5 +3804,42 @@
         "company": 82
       }
     }
+  },
+  {
+    "id": "0fa7c5ac913c",
+    "country": "Singapore",
+    "location": "Singapore",
+    "institution": "A*STAR IMRE",
+    "title": "Revolutionary Advancement in Magnesium Battery Safety",
+    "language": "en",
+    "category": "Research Institute",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "cement"
+    ],
+    "searchTerms": [
+      "cement"
+    ],
+    "firstSeen": "2026-10-31",
+    "url": "https://www.a-star.edu.sg/imre/research-highlights/research-spotlight/revolutionary-advancement-in-magnesium-battery-safety",
+    "scores": {
+      "academic": {
+        "location": 92,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 100,
+        "company": 88
+      },
+      "industry": {
+        "location": 92,
+        "technical": 69,
+        "skills": 67,
+        "level": 76,
+        "language": 100,
+        "company": 90
+      }
+    }
   }
 ]
