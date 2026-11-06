@@ -3841,5 +3841,40 @@
         "company": 90
       }
     }
+  },
+  {
+    "id": "9bffcdc4d5fc",
+    "country": "Hong Kong",
+    "location": "Hong Kong",
+    "institution": "HKUST CEE",
+    "title": "10 CIVL Faculty Members Recognized as 2026 ScholarGPS Highly Ranked Scholars",
+    "language": "en",
+    "category": "Academic",
+    "description": "Automatically discovered from this official source. Verify details and availability on the linked posting.",
+    "englishSummary": "",
+    "skills": [
+      "Civil engineering"
+    ],
+    "searchTerms": [],
+    "firstSeen": "2026-11-06",
+    "url": "https://ce.hkust.edu.hk/news/10-civl-faculty-members-recognized-2026-scholargps-highly-ranked-scholars ",
+    "scores": {
+      "academic": {
+        "location": 84,
+        "technical": 64,
+        "skills": 62,
+        "level": 90,
+        "language": 100,
+        "company": 92
+      },
+      "industry": {
+        "location": 84,
+        "technical": 55,
+        "skills": 62,
+        "level": 64,
+        "language": 100,
+        "company": 82
+      }
+    }
   }
 ]
